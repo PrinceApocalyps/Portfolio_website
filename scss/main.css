@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  text-decoration: none;
+  text-align: justify;
+}
+
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-size: large;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kaushan-script-heavy {
+  font-family: "Kaushan Script", cursive;
+  font-size: x-large;
+  font-weight: 800;
+  font-style: normal;
+}
+
+nav {
+  width: 100vw;
+  height: 2.5rem;
+  position: fixed;
+  z-index: 1;
+  background-color: aliceblue;
+  opacity: 20%;
+}
+nav .nav-items {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  padding: 10px;
+}
+nav .nav-items .nav-item01, nav .nav-items .nav-item02, nav .nav-items .nav-item03 {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
+nav .nav-items .nav-item01 a, nav .nav-items .nav-item02 a, nav .nav-items .nav-item03 a {
+  font-size: xx-large;
+}
+
+div #p01 {
+  background-image: url(../Assets/books.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div #p02 {
+  background-image: url(../Assets/parchment.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div #p03 {
+  background-image: url(../Assets/movies.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div #p04 {
+  background-image: url(../Assets/crocheting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div #p05 {
+  background-image: url(../Assets/robot.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+div #p06 {
+  background-image: url(../Assets/coding.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div #p07 {
+  background-image: url(../Assets/crocheting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div #p08 {
+  background-image: url(../Assets/crocheting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div #p09 {
+  background-image: url(../Assets/crocheting.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div#view-details {
+  display: none;
+}
+
+div.side-bar {
+  flex: 1;
+  border-style: solid;
+  border-color: #cfcfea;
+  border-radius: 2rem;
+  background-color: rgba(194, 184, 163, 0.7333333333);
+  padding: 2rem;
+  margin-right: 2rem;
+}
+div.side-bar h2 {
+  display: inline;
+}
+div.side-bar button {
+  display: inline;
+}
+div.side-bar button#close {
+  overflow: hidden;
+  position: relative;
+  border: none;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: transparent;
+  color: #1da1f2;
+  font: inherit;
+  text-indent: 100%;
+  cursor: pointer;
+}
+div.side-bar button#close:focus {
+  outline: solid 0 transparent;
+  box-shadow: 0 0 0 2px #8ed0f9;
+}
+div.side-bar button#close:hover {
+  background: rgba(29, 161, 142, 0.1);
+}
+div.side-bar button#close:before, div.side-bar button#close:after {
+  position: absolute;
+  top: 15%;
+  left: calc(50% - 0.0625em);
+  width: 0.125em;
+  height: 70%;
+  border-radius: 0.125em;
+  transform: rotate(45deg);
+  background: currentcolor;
+  content: "";
+}
+div.side-bar button#close:after {
+  transform: rotate(-45deg);
+}
+
+div.container {
+  padding-top: 2rem;
+}
+div.container .c-items h2 {
+  text-align: center;
+  display: block;
+}
+div.container #sb-p01 {
+  display: none;
+}
+div.container #sb-p02 {
+  display: none;
+}
+div.container #sb-p03 {
+  display: none;
+}
+div.container #sb-p04 {
+  display: none;
+}
+div.container #sb-p05 {
+  display: none;
+}
+div.container #sb-p06 {
+  display: none;
+}
+div.container #sb-p07 {
+  display: none;
+}
+div.container #sb-p08 {
+  display: none;
+}
+div.container #sb-p09 {
+  display: none;
+}
+
+h2.contacts {
+  font-size: xx-large;
+  color: #c2b8a3;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+div.form {
+  background-image: url(../Assets/clocks.png);
+  margin: 2rem;
+  margin-left: 18rem;
+  margin-right: 18rem;
+  padding: auto;
+  width: 55vw;
+  text-align: center;
+  justify-self: center;
+  border-style: solid;
+  border-radius: 2rem;
+  border-color: #c2b8a3;
+}
+div.form .form_item {
+  font-size: xx-large;
+  display: inline-block;
+  text-align: left;
+  color: #c2b8a3;
+  -webkit-text-stroke: 1px rgb(155, 156, 243);
+}
+div.form .form_input {
+  display: inline-block;
+  text-align: center;
+  min-width: 50vw;
+  min-height: 3rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-width: 2px;
+  border-radius: 2rem;
+}
+div.form .inquiry {
+  min-height: 30vh;
+  width: 5rem;
+  display: inline-block;
+  text-align: justify;
+}
+div.form .form_button {
+  display: inline-block;
+  text-align: center;
+  min-width: 10vw;
+  margin-top: 20px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 10px;
+  border-width: 2px;
+  border-radius: 2rem;
+}
+
+div .overlay {
+  visibility: hidden;
+  position: absolute;
+  z-index: 5;
+  min-height: 70vh;
+  min-width: 50vw;
+  background-color: #cfcfea;
+  opacity: 90%;
+}
+div #overlay01 {
+  left: 10vw;
+}
+
+/*body of the webpage*/
+body {
+  overflow-x: hidden;
+  background: #3d4359;
+}
+
+div.image {
+  padding-bottom: 5px;
+  border-bottom: #cfcfea;
+  border-style: solid;
+  border-width: 2px;
+}
+div.image img {
+  width: 100vw;
+}
+
+div.abstract {
+  padding: 2rem 2rem 1rem;
+  color: #c2b8a3;
+}
+
+div.main {
+  display: flex;
+  background-image: url(../Assets/clocks.png);
+  background-repeat: repeat;
+  background-size: contain;
+}
+div.main .project-galary {
+  display: flex;
+  flex: 1.5;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 70rem;
+  overflow-y: auto;
+}
+div.main .project-galary .projects {
+  width: 23vw;
+  height: 20rem;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3rem;
+  border-color: #c2b8a3;
+  background-color: #cfcfea;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+div.main .project-galary .projects .fil-div {
+  z-index: 1;
+  height: inherit;
+  width: inherit;
+  text-decoration: none;
+  color: rgb(152, 152, 240);
+  -webkit-text-stroke: 2px black;
+  text-shadow: 2px 2px 4px #c2b8a3;
+  font-size: xxx-large;
+  cursor: pointer;
+  background: transparent;
+  border: transparent;
+}
+
+div.projects p {
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+footer.socials {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 5rem;
+  background-color: #cfcfea;
+  opacity: 20%;
+}
+footer.socials .f-item, footer.socials #insta, footer.socials #fb, footer.socials #li {
+  flex: 1;
+  display: flex;
+}
+footer.socials .f-item img, footer.socials #insta img, footer.socials #fb img, footer.socials #li img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+footer.socials h3.f-item {
+  flex: 4;
+  padding: 20px;
+}/*# sourceMappingURL=main.css.map */

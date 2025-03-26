@@ -1,0 +1,19 @@
+
+div{
+    .overlay{
+        visibility: hidden;
+        position: absolute;
+        z-index: 5;
+          
+        min-height: 70vh;
+        min-width: 50vw;
+
+        background-color: $secondary-color;
+            opacity: 90%;
+    }
+
+    #overlay01{
+        left: 10vw;
+        
+    }
+}

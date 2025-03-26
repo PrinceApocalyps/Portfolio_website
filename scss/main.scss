@@ -1,0 +1,147 @@
+@import 'config.scss';
+@import 'nav.scss';
+@import 'projects.scss';
+@import 'sidebar.scss';
+@import 'form.scss';
+@import 'overlay.scss';
+
+
+/*body of the webpage*/
+body{
+    //width: 100vw;
+    //height: 100vh;
+    overflow-x: hidden;
+    background: $primary-color;
+}
+
+div.image{
+
+    padding-bottom: 5px;
+    border-bottom: $secondary-color;
+        border-style: solid;
+        border-width: 2px;
+
+    img{
+        width: 100vw; 
+
+    }
+    
+}
+
+div.abstract{
+    //display: block;
+    //position: absolute;
+    padding: 2rem 2rem 1rem;
+    color: $secondary-accent-color;
+}
+
+div.main{
+        display: flex;
+        background-image: url(../Assets/clocks.png);
+        background-repeat: repeat;
+        background-size: contain;
+
+        .project-galary{
+
+            display: flex;
+            flex: 1.5;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            //make the sidebar into a display window for the projects.
+            //make the projects more clickable and wirte the code for
+            //hovers and other functionalities.
+            //fix the 
+            height: 70rem;
+            //overflow-x: hidden;
+            overflow-y: auto;
+            
+    
+            .projects{
+
+                
+                width: 23vw;
+                height: 20rem;
+    
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 3rem;
+
+                border-color: $secondary-accent-color;
+                background-color: $secondary-color;
+
+                //padding: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                
+                
+
+
+                .fil-div{
+                    z-index: 1;
+
+                    height: inherit;
+                    width: inherit;
+
+                    text-decoration: none;
+                    color: rgb(152, 152, 240);
+                    -webkit-text-stroke: 2px black;
+                    text-shadow: 2px 2px 4px $secondary-accent-color;
+                    
+                    
+                    font-size: xxx-large;
+                    cursor: pointer;
+                    //border-radius: 2rem;
+
+                    //background-color: aliceblue;
+                    //opacity: 0%;
+
+                    background: transparent;
+                    border: transparent;
+                }
+
+            }
+        }
+
+}
+
+div.projects{
+    p{
+        display: block;
+        position: relative;
+        z-index: 0;
+    }
+
+}
+
+footer.socials{
+    display: flex;
+    align-items: center;
+    
+    width: 100vw;
+    height: 5rem;
+
+    background-color: $secondary-color;
+    opacity: 20%;
+
+    .f-item, #insta, #fb, #li{
+        flex: 1;
+        display: flex;
+        
+        img{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        
+    }
+
+    h3.f-item{
+        flex: 4;
+        padding: 20px;
+
+    }
+
+
+
+}

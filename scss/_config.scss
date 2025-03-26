@@ -1,0 +1,38 @@
+
+//color variables to be used everywhere in the website
+$primary-color: #3d4359;
+$secondary-color: #cfcfea;
+$secondary-accent-color: #c2b8a3;
+$secondary-accent-color-transparent: #c2b8a3bb;
+$text-color: #3d4e3b;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    text-decoration: none;
+    text-align: justify;
+}
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-size: large;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kaushan-script-heavy {
+    font-family: "Kaushan Script", cursive;
+    font-size: x-large;
+    font-weight: 800;
+    font-style: normal;
+}
+  

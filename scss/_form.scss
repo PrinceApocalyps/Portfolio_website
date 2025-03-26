@@ -1,0 +1,78 @@
+h2.contacts{
+    font-size: xx-large;
+    color: $secondary-accent-color;
+    text-align: center;
+    padding-top: 5rem;
+
+}
+
+
+div.form{
+    background-image: url(../Assets/clocks.png);
+
+    margin: 2rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    padding: auto;
+
+    width: 55vw;
+
+
+    text-align: center;
+    justify-self: center;
+
+    border-style: solid;
+    border-radius: 2rem;
+    border-color: $secondary-accent-color;
+
+
+    .form_item{
+        font-size: xx-large;
+        display: inline-block;
+        text-align: left;
+
+        color: $secondary-accent-color;
+        -webkit-text-stroke: 1px rgb(155, 156, 243);
+        //text-shadow: 2px 2px 4px $secondary-accent-color;
+                    
+    }
+
+    .form_input{
+        display: inline-block;
+        text-align: center;
+
+        min-width: 50vw;
+        min-height: 3rem;
+        
+        padding: 10px;
+        margin-bottom: 15px;
+
+        border-width: 2px;
+        border-radius: 2rem;
+
+    }
+
+    .inquiry{
+        min-height: 30vh;
+        width: 5rem; 
+        display: inline-block;
+
+        text-align: justify;
+    }
+
+    .form_button{
+        display: inline-block;
+        text-align: center;
+
+        min-width: 10vw;
+        //min-height: 5rem;
+        
+        margin-top: 20px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding: 10px;
+
+        border-width: 2px;
+        border-radius: 2rem;
+    }
+}
